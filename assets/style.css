@@ -1,0 +1,135 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background-color: #12cad6;
+  position: relative;
+}
+.screen {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%!important;
+  transform: translate(-50%,-50%);
+  color: white;
+  text-align:center;
+  font-family: sans-serif;
+
+}
+.display-1 h1{
+    display: block;
+    font-weight: 700;
+    font-size: 4.5rem;
+    margin-bottom: 1rem;
+}
+.display-1 p {
+  font-weight: 400!important;
+  font-size: 1rem!important;
+  letter-spacing: 3px;
+  line-height: 1.5;
+}
+.lightBolt {
+  font-size: 2rem;
+  margin: 5px;
+}
+.mouse{
+  font-size: 3rem!important;
+  margin-top: 1.8rem;
+  animation: mouse 1.5s ease-in-out infinite alternate;
+
+}
+@keyframes mouse {
+    from{
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-10px);
+    }
+
+}
+.reaction-actual-game{
+  display: none;
+}
+.waitScreen {
+  height: 100vh;
+  width: 100%;
+  background: #fa1616;
+    overflow: hidden;
+    position: relative;
+}
+.dot {
+  height: 2rem;
+  border-radius: 100%;
+  width: 2rem;
+  background: white;
+  /* font-size: 5rem; */
+  margin: 1rem;
+}
+.dots{
+
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4rem;
+
+}
+.display-2 h1 {
+  letter-spacing: 8px;
+}
+.information {
+  margin-top: 4.1rem;
+  display: flex;
+  justify-content: center;
+}
+.average ,.reaction{
+  margin: 0 7rem;
+}
+.rxn-screen {
+  height: 100vh;
+  width: 100%;
+  background: lightgreen;
+  overflow: hidden;
+  display: none;
+  position: relative;
+}
+.display-3 h1{
+  font-size: 5rem;
+}
+.restart {
+  display: none;
+}
+
+.button-restart {
+  margin-top: 3.5rem;
+  color: #363636;
+  padding: 10px;
+  background: #fbd46d;
+  border: none;
+  font-size: 1.3rem;
+  border-radius: 7px;
+}
+/* ##################### DOT ANIMATION ##################### */
+.dot-1{
+  animation: dot 1s ease-in-out infinite alternate;
+}
+.dot-2{
+  animation: dot 1s ease-in-out 0.6s infinite alternate;
+}
+.dot-3{
+  animation: dot 1s ease-in-out 1s infinite alternate;
+}
+@keyframes dot {
+  from{
+    transform: translateY(0);
+  }
+  to{
+    transform: translateY(-20px);
+  }
+}
